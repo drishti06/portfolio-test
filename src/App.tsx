@@ -7,6 +7,7 @@ import TechStack from "./components/tech-stack";
 import Experience from "./components/experience";
 import Projects from "./components/projects";
 import Testimonials from "./components/testimonials";
+import Profile from "../public/profile.jpeg";
 
 function App() {
   const [mounted, setMounted] = useState(false);
@@ -66,9 +67,9 @@ function App() {
           <div className="order-1 md:order-2 flex justify-center md:justify-end">
             <div className="relative w-48 h-48 md:w-64 md:h-64 overflow-hidden rounded-full border-4 border-background shadow-xl">
               <img
-                src="/placeholder.svg?height=300&width=300"
-                alt="Sagar's profile picture"
-                className="object-cover"
+                src={Profile}
+                alt="profile picture"
+                className="object-fill"
               />
             </div>
           </div>
